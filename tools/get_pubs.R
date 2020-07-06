@@ -28,7 +28,7 @@ html_2 <- html_1 %>%
 #    author=str_replace_all(author, " (\\S) ", "\\1 "),
     author=str_replace_all(author, "([A-Z]) ([A-Z]) ", "\\1\\2 "),
     author=str_replace_all(author, ", \\.\\.\\.", " et al."),
-    author=str_replace_all(author, "D Ilut", "<b>D Ilut</b>") # make my name fat
+    author=str_replace_all(author, "D Ilut", "<b>D Ilut</b>"), # make my name fat
     author=str_replace_all(author, "DC Ilut", "<b>DC Ilut</b>") # make my name fat
   ) %>% split(.$year) %>%
     map(function(x){

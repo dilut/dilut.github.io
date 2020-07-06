@@ -1,3 +1,3 @@
 ## Markdown page goes here
 
-y
+{% include publications.html %}
